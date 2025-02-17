@@ -1,0 +1,94 @@
+  <head>
+    <title>Rock-Paper-Scissors</title>
+    <style>
+      body {
+        background-color: #4a6f83;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .bar {
+        text-align: center;
+        background-color: #d2c400;
+        color: white;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      #main-nav ul {
+        background-color: rgb(30, 0, 255);
+        text-align: center;
+        padding: 0;
+      }
+      #main-nav ul li {
+        display: inline;
+        margin: 10px;
+        list-style: none;
+      }
+      #main-nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      #main-nav ul li:hover {
+        background-color: #474747;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .content {
+        width: 70%;
+        padding: 20px;
+      }
+      .sidebar {
+        width: 25%;
+        background-color: rgb(196, 0, 180);
+        padding: 20px;
+      }
+      .sidebar:hover {
+        background-color: rgb(83, 0, 78);
+      }
+      input[type="text"]:focus {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bar">
+      <h1>Rock-Paper-Scissors Game</h1>
+    </header>
+
+    <nav id="main-nav">
+      <ul>
+        <li><a href="https://www.google.com">Google</a></li>
+        <li><a href="https://www.umd.edu">UMD</a></li>
+        <li><a href="http://www.youtube.com">Youtube</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <main class="content">
+        <h2>Play the Game!</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <br />
+          <label for="choice">Choose:</label>
+          <select id="choice" name="choice">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+          </select>
+          <br />
+          <input type="submit" value="Play!" />
+        </form>
+      </main>
+
+      <aside class="sidebar">
+        <h2>Rules</h2>
+        <p>Rock smashes Scissors, Scissors cuts Paper, Paper folds Rock.</p>
+      </aside>
+    </div>
+
+    <footer class="bar">
+      <p>&copy; 2025 Rock-Paper-Scissors Game QOTD: What's your best strategy for this game?</p>
+    </footer>
+  </body>
+</html>
